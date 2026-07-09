@@ -10,10 +10,10 @@ This repository contains all the Spring Boot projects I built while learning Spr
 
 Start here to understand the fundamentals of Spring Boot.
 
-| Project      | Topics Covered                                                                          |
-| ------------ | --------------------------------------------------------------------------------------- |
+| Project | Topics Covered |
+|---------|----------------|
 | `MyFirstApp` | Creating your first Spring Boot application, project structure, running the application |
-| `Actuator`   | Spring Boot Actuator, monitoring application health and metrics                         |
+| `Actuator` | Spring Boot Actuator, monitoring application health and metrics |
 
 ---
 
@@ -21,23 +21,24 @@ Start here to understand the fundamentals of Spring Boot.
 
 Learn the core concepts of the Spring Framework, especially Dependency Injection and the IoC Container.
 
-| Project                 | Topics Covered                                                                    |
-| ----------------------- | --------------------------------------------------------------------------------- |
-| `ComponentScanning`    | Component scanning and automatic bean detection                                   |
-| `ConstructorInjection` | Constructor-based dependency injection (recommended approach)                     |
-| `SetterInjection`      | Setter-based dependency injection                                                 |
-| `Qualifier`             | Resolving ambiguity when multiple beans of the same type exist using `@Qualifier` |
-| `Primary`               | Selecting a default bean using `@Primary`                                         |
+| Project | Topics Covered |
+|---------|----------------|
+| `ComponentScanning` | Component scanning and automatic bean detection |
+| `ConstructorInjection` | Constructor-based dependency injection (recommended approach) |
+| `SetterInjection` | Setter-based dependency injection |
+| `Qualifier` | Resolving ambiguity when multiple beans of the same type exist using `@Qualifier` |
+| `Primary` | Selecting a default bean using `@Primary` |
+| `LazyInitialization` | Lazy bean initialization using `@Lazy`, understanding eager vs. lazy bean creation and when Spring instantiates beans |
 
 ---
 
 ## 🛠️ Technologies Used
 
-* Java 21
-* Spring Boot
-* Spring Core
-* Maven
-* IntelliJ IDEA
+- Java 21
+- Spring Boot
+- Spring Core
+- Maven
+- IntelliJ IDEA
 
 ---
 
@@ -50,5 +51,6 @@ Learn the core concepts of the Spring Framework, especially Dependency Injection
 5. `SetterInjection`
 6. `Qualifier`
 7. `Primary`
+8. `LazyInitialization`
 
 Each project builds on the concepts introduced in the previous one, so following this order will provide the best learning experience.
