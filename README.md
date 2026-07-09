@@ -12,8 +12,8 @@ Start here to understand the fundamentals of Spring Boot.
 
 | Project      | Topics Covered                                                                          |
 | ------------ | --------------------------------------------------------------------------------------- |
-| `myfirstapp` | Creating your first Spring Boot application, project structure, running the application |
-| `actuator`   | Spring Boot Actuator, monitoring application health and metrics                         |
+| `MyFirstApp` | Creating your first Spring Boot application, project structure, running the application |
+| `Actuator`   | Spring Boot Actuator, monitoring application health and metrics                         |
 
 ---
 
@@ -23,11 +23,11 @@ Learn the core concepts of the Spring Framework, especially Dependency Injection
 
 | Project                 | Topics Covered                                                                    |
 | ----------------------- | --------------------------------------------------------------------------------- |
-| `component-scanning`    | Component scanning and automatic bean detection                                   |
-| `constructor-injection` | Constructor-based dependency injection (recommended approach)                     |
-| `setter-injection`      | Setter-based dependency injection                                                 |
-| `qualifier`             | Resolving ambiguity when multiple beans of the same type exist using `@Qualifier` |
-| `primary`               | Selecting a default bean using `@Primary`                                         |
+| `ComponentScanning`    | Component scanning and automatic bean detection                                   |
+| `ConstructorInjection` | Constructor-based dependency injection (recommended approach)                     |
+| `SetterInjection`      | Setter-based dependency injection                                                 |
+| `Qualifier`             | Resolving ambiguity when multiple beans of the same type exist using `@Qualifier` |
+| `Primary`               | Selecting a default bean using `@Primary`                                         |
 
 ---
 
@@ -43,12 +43,12 @@ Learn the core concepts of the Spring Framework, especially Dependency Injection
 
 ## 📖 Recommended Study Order
 
-1. `myfirstapp`
-2. `actuator`
-3. `component-scanning`
-4. `constructor-injection`
-5. `setter-injection`
-6. `qualifier`
-7. `primary`
+1. `MyFirstApp`
+2. `Actuator`
+3. `ComponentScanning`
+4. `ConstructorInjection`
+5. `SetterInjection`
+6. `Qualifier`
+7. `Primary`
 
 Each project builds on the concepts introduced in the previous one, so following this order will provide the best learning experience.
