@@ -28,7 +28,8 @@ Learn the core concepts of the Spring Framework, especially Dependency Injection
 | `SetterInjection` | Setter-based dependency injection |
 | `Qualifier` | Resolving ambiguity when multiple beans of the same type exist using `@Qualifier` |
 | `Primary` | Selecting a default bean using `@Primary` |
-| `LazyInitialization` | Lazy bean initialization using `@Lazy`, understanding eager vs. lazy bean creation and when Spring instantiates beans |
+| `LazyInitialization` | Lazy bean initialization using `@Lazy`, understanding eager vs. lazy bean creation |
+| `BeanScopes` | Understanding Spring bean scopes (`singleton` and `prototype`), bean lifecycle within the IoC container, and choosing the appropriate scope based on application requirements |
 
 ---
 
@@ -44,13 +45,19 @@ Learn the core concepts of the Spring Framework, especially Dependency Injection
 
 ## 📖 Recommended Study Order
 
+### Basics
 1. `MyFirstApp`
 2. `Actuator`
+
+### Spring Core
 3. `ComponentScanning`
 4. `ConstructorInjection`
 5. `SetterInjection`
 6. `Qualifier`
 7. `Primary`
 8. `LazyInitialization`
+9. `BeanScopes`
+
+➡️ **Next Project:** `BeanLifecycle`
 
 Each project builds on the concepts introduced in the previous one, so following this order will provide the best learning experience.
