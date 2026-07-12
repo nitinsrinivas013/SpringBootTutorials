@@ -30,6 +30,7 @@ Learn the core concepts of the Spring Framework, especially Dependency Injection
 | `Primary` | Selecting a default bean using `@Primary` |
 | `LazyInitialization` | Lazy bean initialization using `@Lazy`, understanding eager vs. lazy bean creation |
 | `BeanScopes` | Understanding Spring bean scopes (`singleton` and `prototype`), bean lifecycle within the IoC container, and choosing the appropriate scope based on application requirements |
+| `BeanLifecycle` | Managing the bean lifecycle using `@PostConstruct` and `@PreDestroy`, understanding bean initialization and destruction callbacks, and when Spring invokes lifecycle methods |
 
 ---
 
@@ -57,7 +58,8 @@ Learn the core concepts of the Spring Framework, especially Dependency Injection
 7. `Primary`
 8. `LazyInitialization`
 9. `BeanScopes`
+10. `BeanLifecycle`
 
-➡️ **Next Project:** `BeanLifecycle`
+➡️ **Next Project:** `JavaConfiguration`
 
 Each project builds on the concepts introduced in the previous one, so following this order will provide the best learning experience.
