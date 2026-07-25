@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spring Boot Calculator</title>
+
+    <style>
+
+        body{
+            background:#0f172a;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            font-family:Arial;
+        }
+
+        .calculator{
+
+            background:white;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0px 0px 20px rgba(0,0,0,.3);
+
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        input{
+
+            width:95%;
+            height:45px;
+            margin:10px 0;
+            font-size:22px;
+            text-align:right;
+
+        }
+
+        .buttons{
+
+            display:grid;
+            grid-template-columns:repeat(4,70px);
+            gap:10px;
+
+        }
+
+        button{
+
+            height:60px;
+            font-size:22px;
+            cursor:pointer;
+            border:none;
+            border-radius:8px;
+            background:#2563eb;
+            color:white;
+
+        }
+
+        button:hover{
+
+            background:#1d4ed8;
+
+        }
+
+        .equal{
+
+            background:#16a34a;
+
+        }
+
+        .clear{
+
+            background:#dc2626;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <h2>Calculator</h2>
+
+    <input type="text" id="display" readonly>
+
+    <div class="buttons">
+
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button onclick="append('/')">/</button>
+
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('*')">*</button>
+
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button onclick="append('-')">-</button>
+
+        <button onclick="append('0')">0</button>
+        <button onclick="append('.')">.</button>
+
+        <button class="equal" onclick="calculate()">=</button>
+
+        <button onclick="append('+')">+</button>
+
+        <button class="clear" onclick="clearDisplay()">C</button>
+
+    </div>
+
+</div>
+
+<script>
+
+    function append(value){
+
+        document.getElementById("display").value += value;
+
+    }
+
+    function clearDisplay(){
+
+        document.getElementById("display").value="";
+
+    }
+
+    function calculate(){
+
+        try{
+
+            document.getElementById("display").value =
+                eval(document.getElementById("display").value);
+
+        }
+        catch{
+
+            alert("Invalid Expression");
+
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
