@@ -7,6 +7,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.List;
+
 @SpringBootApplication
 public class CrudDemoApplication {
 
@@ -17,11 +19,77 @@ public class CrudDemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return args -> {
-			// createStudent(studentDAO);
-			//createMultipleStudents(studentDAO);
+			createStudent(studentDAO);
+     		createMultipleStudents(studentDAO);
+//			readStudent(studentDAO);
+//			readAllStudent(studentDAO);
+//			System.out.println();
+//			readAllStudentSortedByLastName(studentDAO);
+//			System.out.println();
+//			readAllStudentByLastName(studentDAO);
+//			updateStudent(studentDAO);
+//			deleteStudent(studentDAO);
+//			deleteAllStudents(studentDAO);
 
-			readStudent(studentDAO);
 		};
+	}
+
+	public void deleteAllStudents(StudentDAO studentDAO) {
+
+		System.out.println("Deleting all entries...");
+		int numRowsDeleted = studentDAO.deleteAll();
+
+		System.out.println("Total rows deleted = " + numRowsDeleted);
+
+	}
+
+	public void deleteStudent(StudentDAO studentDAO) {
+
+		int myId = 3;
+
+		System.out.println("Before deletion: ");
+		readAllStudent(studentDAO);
+		System.out.println("After deletion: ");
+
+		studentDAO.delete(myId);
+		readAllStudent(studentDAO);
+
+	}
+
+	public void readAllStudentByLastName(StudentDAO studentDAO) {
+
+		List<Student> theStudents;
+
+		theStudents = studentDAO.findByLastName("Srinivas");
+
+		for(Student it : theStudents){
+			System.out.println(it);
+		}
+
+	}
+
+	public void readAllStudentSortedByLastName(StudentDAO studentDAO) {
+
+		List<Student> studentList;
+
+		studentList = studentDAO.findAllSortByLastName();
+
+		for(Student it : studentList){
+			System.out.println(it);
+		}
+
+	}
+
+	public void readAllStudent(StudentDAO studentDAO) {
+
+		List<Student> allStudents;
+
+		allStudents = studentDAO.findAll();
+
+        for (Student it : allStudents) {
+            System.out.println(it);
+        }
+
 	}
 
 	public void readStudent(StudentDAO studentDAO) {
@@ -73,6 +141,21 @@ public class CrudDemoApplication {
 		System.out.println("Saved Student - Generated ID: " + student1.getId());
 	}
 
+	public void updateStudent(StudentDAO studentDAO){
+
+		int theId = 1;
+		Student myStudent = studentDAO.findById(theId);
+
+		System.out.println("Student before updating: " + myStudent);
+
+		myStudent.setFirstName("Victor");
+		myStudent.setLastName("Krum");
+		myStudent.setEmail("victorkrum67@gmail.com");
+		studentDAO.update(myStudent);
+
+		System.out.println("Student after updating: " + myStudent);
+
+	}
 
 
 }
