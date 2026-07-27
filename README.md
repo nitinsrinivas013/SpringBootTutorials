@@ -1,3 +1,167 @@
+# Spring Boot Learning Repository
+
+This repository contains all the Spring Boot projects I built while learning Spring Boot from the ground up. Each project focuses on a specific concept and is organized in a structured learning path. The projects are intended to be explored in the order shown below, as each one builds upon concepts introduced in the previous projects.
+
+---
+
+# 📚 Learning Roadmap
+
+## 1. Basics
+
+Start here to understand the fundamentals of Spring Boot.
+
+| Project      | Topics Covered                                                                                                 |
+| ------------ | -------------------------------------------------------------------------------------------------------------- |
+| `MyFirstApp` | Creating your first Spring Boot application, project structure, application lifecycle, running the application |
+| `Actuator`   | Spring Boot Actuator, monitoring application health, metrics, and production-ready features                    |
+
+---
+
+## 2. Spring Core
+
+Learn the core concepts of the Spring Framework, especially Dependency Injection and the IoC Container.
+
+| Project                | Topics Covered                                                                   |
+| ---------------------- | -------------------------------------------------------------------------------- |
+| `ComponentScanning`    | Component scanning and automatic bean detection                                  |
+| `ConstructorInjection` | Constructor-based dependency injection (recommended approach)                    |
+| `SetterInjection`      | Setter-based dependency injection                                                |
+| `Qualifier`            | Resolving ambiguity when multiple beans exist using `@Qualifier`                 |
+| `Primary`              | Selecting a default bean using `@Primary`                                        |
+| `LazyInitialization`   | Lazy bean initialization using `@Lazy`, eager vs. lazy bean creation             |
+| `BeanScopes`           | Understanding Spring bean scopes (`singleton`, `prototype`) and when to use them |
+| `BeanLifecycle`        | Managing the bean lifecycle using `@PostConstruct` and `@PreDestroy`             |
+| `JavaConfigBean`       | Creating beans using `@Configuration` and `@Bean` instead of component scanning  |
+
+---
+
+## 3. Docker & Deployment
+
+Learn how to containerize and deploy Spring Boot applications.
+
+| Project            | Topics Covered                                                                                                                                            |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Docker`           | Creating Docker images, writing Dockerfiles, running Spring Boot applications inside Docker containers                                                    |
+| `RegistrationForm` | Spring MVC, Thymeleaf form handling, server-side validation basics, deployment using Docker on AWS EC2                                                    |
+| `Calculator`       | Spring MVC application using Thymeleaf, request handling, Docker containerization, deployment on AWS EC2 with Application Load Balancer and Target Groups |
+
+### Deployment Experience
+
+The web applications in this section were deployed on **AWS EC2** using Docker containers. An **Application Load Balancer (ALB)** with **Target Groups** was configured to distribute incoming traffic to the application instances, providing practical experience with cloud deployment concepts.
+
+---
+
+## 4. Hibernate & Spring Data JPA
+
+Learn how Spring Boot interacts with relational databases using Hibernate and Spring Data JPA.
+
+| Project    | Topics Covered                                                                                                                                                               |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `CrudDemo` | Building CRUD applications using Hibernate, EntityManager, DAO pattern, Spring Data JPA, MySQL, entity lifecycle, transactions, repository pattern, and database integration |
+
+### Supporting Resources
+
+The `MYSQL/STARTER-SQL-SCRIPTS` folder contains the SQL scripts required for the Hibernate projects.
+
+Execute these SQL scripts before running `CrudDemo` to create the database, tables, sample data, and required users.
+
+---
+
+## 5. Spring REST APIs
+
+Learn how to build RESTful web services using Spring Boot.
+
+| Project            | Topics Covered                                                                                                                                                                                                                                                                                    |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `DemoSpringServer` | Creating REST APIs using `@RestController`, `@GetMapping`, `@PostMapping`, `@PathVariable`, request mapping, HTTP methods, JSON responses, Jackson serialization/deserialization, automatic data binding, request body handling, REST endpoint testing using Postman, browser, and Android client |
+
+### Concepts Covered
+
+* REST architecture and RESTful principles
+* HTTP request/response lifecycle
+* JSON serialization using Jackson
+* Automatic object mapping
+* Request parameter binding
+* Path variables
+* Request body handling
+* Building API endpoints
+* Testing APIs using Postman
+* Consuming APIs from web and mobile applications
+
+---
+
+# 🛠️ Technologies Used
+
+* Java 21
+* Spring Boot
+* Spring Core
+* Spring MVC
+* Spring REST
+* Thymeleaf
+* Hibernate
+* Spring Data JPA
+* MySQL
+* Docker
+* AWS EC2
+* AWS Application Load Balancer
+* AWS Target Groups
+* Maven
+* IntelliJ IDEA
+* Postman
+
+---
+
+# 📖 Recommended Study Order
+
+## Basics
+
+1. `MyFirstApp`
+2. `Actuator`
+
+## Spring Core
+
+3. `ComponentScanning`
+4. `ConstructorInjection`
+5. `SetterInjection`
+6. `Qualifier`
+7. `Primary`
+8. `LazyInitialization`
+9. `BeanScopes`
+10. `BeanLifecycle`
+11. `JavaConfigBean`
+
+## Docker & Deployment
+
+12. `Docker`
+13. `RegistrationForm`
+14. `Calculator`
+
+## Hibernate & Spring Data JPA
+
+15. `CrudDemo`
+
+> **Note:** Before starting `CrudDemo`, execute the SQL scripts available in `MYSQL/STARTER-SQL-SCRIPTS` to create the required database and sample data.
+
+## Spring REST APIs
+
+16. `DemoSpringServer`
+
+---
+
+## 🚀 Repository Goal
+
+This repository documents my complete journey of learning Spring Boot, beginning with the fundamentals and progressing towards building production-ready backend applications.
+
+As I continue learning, new modules covering topics such as Spring Security, Validation, Spring Data REST, JWT Authentication, Microservices, Testing, Spring Cloud, and more will be added to this repository.
+
+Each project is designed to focus on a specific concept while building upon previous knowledge, making the repository a structured reference for both learning and revision.
+
+
+
+
+
+
+
 ## 📈 Learning Progress
 
 ### Core Spring Boot
