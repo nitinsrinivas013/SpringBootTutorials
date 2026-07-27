@@ -73,7 +73,7 @@ Learn how to build RESTful web services using Spring Boot.
 
 | Project            | Topics Covered                                                                                                                                                                                                                                                                                    |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `DemoSpringServer` | Creating REST APIs using `@RestController`, `@GetMapping`, `@PostMapping`, `@PathVariable`, request mapping, HTTP methods, JSON responses, Jackson serialization/deserialization, automatic data binding, request body handling, REST endpoint testing using Postman, browser, and Android client |
+| `DemoSpringServer` | Creating REST APIs using `@RestController`, `@GetMapping`, `@PostConstruct`, `@PathVariable`, request mapping, HTTP methods, JSON responses, Jackson serialization/deserialization, automatic data binding, request body handling, REST endpoint testing using Postman, browser, and Android client |
 
 ### Concepts Covered
 
